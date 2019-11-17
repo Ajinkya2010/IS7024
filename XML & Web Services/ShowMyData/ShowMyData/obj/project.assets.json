@@ -12085,11 +12085,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ajink\\source\\repos\\ShowMyData\\ShowMyData\\ShowMyData.csproj",
+      "projectUniqueName": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\XML & Web Services\\ShowMyData\\ShowMyData\\ShowMyData.csproj",
       "projectName": "ShowMyData",
-      "projectPath": "C:\\Users\\ajink\\source\\repos\\ShowMyData\\ShowMyData\\ShowMyData.csproj",
+      "projectPath": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\XML & Web Services\\ShowMyData\\ShowMyData\\ShowMyData.csproj",
       "packagesPath": "C:\\Users\\ajink\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ajink\\source\\repos\\ShowMyData\\ShowMyData\\obj\\",
+      "outputPath": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\XML & Web Services\\ShowMyData\\ShowMyData\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
