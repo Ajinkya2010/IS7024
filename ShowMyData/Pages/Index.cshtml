@@ -1,0 +1,89 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Tabular Data For Police and Drug Crimes";
+    var police_Crimes = (Crime.PoliceCrime[])ViewData["PoliceCrime"];
+    var Drug_Crimes = (Drugs.DrugCrime[])ViewData["DrugCrime"];
+}
+
+<div class="text-center">
+    <h1 class="display-4">Police Crime Report</h1>
+    <hr />
+    <table border="1" width="90%">
+        <tr>
+            <th>Incident Number</th>
+            <th>Date Reported</th>
+            <th>Date of Clearence</th>
+            <th>Address of Incident</th>
+            <th>Location</th>
+            <th>Neighbourhood</th>
+            <th>Longitude</th>
+            <th>Latitude</th>
+        </tr>
+        @{
+            foreach (Crime.PoliceCrime welcome in police_Crimes)
+            {
+                <tr>
+                    <td>
+                        @welcome.IncidentNo
+                    </td>
+                    <td>
+                        @welcome.DateReported
+                    </td>
+                    <td>
+                        @welcome.DateOfClearance
+                    </td>
+                    <td>
+                        @welcome.AddressX
+                    </td>
+                    <td>
+                        @welcome.Location
+                    </td>
+                    <td>
+                        @welcome.Neighborhood
+                    </td>
+                    <td>
+                        @welcome.LongitudeX
+                    </td>
+                    <td>
+                        @welcome.LatitudeX
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">Drug Crime Report</h1>
+    <hr />
+    <table border="1" width="90%">
+        <tr>
+            <th>Address</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Neighbourhood</th>
+        </tr>
+        @{
+            foreach (Drugs.DrugCrime drug in Drug_Crimes)
+            {
+                <tr>
+                    <td>
+                        @drug.AddressX
+                    </td>
+                    <td>
+                        @drug.LatitudeX
+                    </td>
+                    <td>
+                        @drug.LongitudeX
+                    </td>
+                    <td>
+                        @drug.CommunityCouncilNeighborhood
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
