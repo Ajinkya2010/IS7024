@@ -12,19 +12,25 @@ namespace ShowMyData.Pages
 {
     public class IndexModel : PageModel
     {
-        public void OnGet()
+        public JsonResult OnGet()
+        {
+
+            string policeCrimeString = getJsonData("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
+            var policeCrime = PoliceCrime.FromJson(policeCrimeString);
+
+            string drugCrimeString = getJsonData("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
+            var drugCrime = DrugCrime.FromJson(drugCrimeString);
+
+            return new JsonResult(policeCrime);
+
+        }
+
+        private string getJsonData(string url)
         {
             using (var WebClient = new WebClient())
             {
-                string jsonString = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
-                var policeCrime = PoliceCrime.FromJson(jsonString);
-                ViewData["PoliceCrime"] = policeCrime;
-
-                string jsonString_1 = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
-                var drugCrime = DrugCrime.FromJson(jsonString_1);
-                ViewData["DrugCrime"] = drugCrime;
+                return WebClient.DownloadString(url);
             }
-
         }
     }
 }
