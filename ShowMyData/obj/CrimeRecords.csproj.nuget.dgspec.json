@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajink\\Source\\Repos\\IS70242\\PoliceCrime\\XML & Web Services\\ShowMyData\\ShowMyData\\CrimeRecords.csproj": {}
+    "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajink\\Source\\Repos\\IS70242\\PoliceCrime\\XML & Web Services\\ShowMyData\\ShowMyData\\CrimeRecords.csproj": {
+    "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajink\\Source\\Repos\\IS70242\\PoliceCrime\\XML & Web Services\\ShowMyData\\ShowMyData\\CrimeRecords.csproj",
+        "projectUniqueName": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj",
         "projectName": "CrimeRecords",
-        "projectPath": "C:\\Users\\ajink\\Source\\Repos\\IS70242\\PoliceCrime\\XML & Web Services\\ShowMyData\\ShowMyData\\CrimeRecords.csproj",
+        "projectPath": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj",
         "packagesPath": "C:\\Users\\ajink\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajink\\Source\\Repos\\IS70242\\PoliceCrime\\XML & Web Services\\ShowMyData\\ShowMyData\\obj\\",
+        "outputPath": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

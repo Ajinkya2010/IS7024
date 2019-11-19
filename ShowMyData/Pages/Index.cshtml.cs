@@ -14,16 +14,28 @@ namespace ShowMyData.Pages
     {
         public void OnGet()
         {
+            SearchCompleted = false;
+        }
+        [BindProperty]
+        public string Search { get; set; }
+        public bool SearchCompleted { get; set; }
+        public ICollection<PoliceCrime> policeCrimes { get; set; }
+        public ICollection<DrugCrime> drugCrimes { get; set; }
+        public void OnPost()
+        {
             using (var WebClient = new WebClient())
             {
                 string jsonString = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
-                var policeCrime = PoliceCrime.FromJson(jsonString);
-                ViewData["PoliceCrime"] = policeCrime;
+                policeCrimes = PoliceCrime.FromJson(jsonString);
+                policeCrimes = policeCrimes.Where(x => x.Neighborhood.ToLower().Equals(Search.ToLower())).ToArray();
+                ViewData["PoliceCrime"] = policeCrimes;
 
                 string jsonString_1 = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
-                var drugCrime = DrugCrime.FromJson(jsonString_1);
-                ViewData["DrugCrime"] = drugCrime;
+                drugCrimes = DrugCrime.FromJson(jsonString_1);
+                drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(Search.ToLower())).ToArray();
+                ViewData["DrugCrimes"] = drugCrimes;
             }
+            SearchCompleted = true;
 
         }
     }

@@ -2,11 +2,145 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Tabular Data For Police and Drug Crimes";
-    var police_Crimes = (Crime.PoliceCrime[])ViewData["PoliceCrime"];
-    var Drug_Crimes = (Drugs.DrugCrime[])ViewData["DrugCrime"];
+    var police_Crimes = (Crime.PoliceCrime[])ViewData["policecrimes"];
+    var drug_Crimes = (Drugs.DrugCrime[])ViewData["drugCrimes"];
 }
 
-<div class="text-center">
+<h1>Search Neighbourhood</h1>
+
+<form action="" method="POST">
+    <div class="form-group">
+        <label class="control-label" for="search"><strong></strong></label>
+        <input type="text" class="form-control" name="search" id="search" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Search Neighborhood" class="btn btn-danger" />
+    </div>
+</form>
+
+
+@if (Model.SearchCompleted)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="PoliceCrimeTab" data-toggle="tab" href="#PoliceCrime" role="tab" aria-controls="nav-home" aria-selected="true">Police Crime</a>
+                        <a class="nav-item nav-link" id="DrugCrimeTab" data-toggle="tab" href="#DrugCrime" role="tab" aria-controls="nav-profile" aria-selected="false">Drug Crime</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="PoliceCrime" role="tabpanel" aria-labelledby="PoliceCrimeTab">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Incident Number</th>
+                                    <th>Date Reported</th>
+                                    <th>Date of Clearence</th>
+                                    <th>Address of Incident</th>
+                                    <th>Location</th>
+                                    <th>Neighbourhood</th>
+                                    <th>Longitude</th>
+                                    <th>Latitude</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.policeCrimes.Count() > 0)
+                                {
+                                    @foreach (var police in Model.policeCrimes)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @police.IncidentNo
+                                            </td>
+                                            <td>
+                                                @police.DateReported
+                                            </td>
+                                            <td>
+                                                @police.DateOfClearance
+                                            </td>
+                                            <td>
+                                                @police.AddressX
+                                            </td>
+                                            <td>
+                                                @police.Location
+                                            </td>
+                                            <td>
+                                                @police.Neighborhood
+                                            </td>
+                                            <td>
+                                                @police.LongitudeX
+                                            </td>
+                                            <td>
+                                                @police.LatitudeX
+                                            </td>
+                                        </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr class="danger">
+                                                <td colspan="5" class="text-center">
+                                                    No results found for term "@Model.Search"
+                                                </td>
+                                            </tr>
+                                        }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="DrugCrime" role="tabpanel" aria-labelledby="DrugCrimeTab">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Address</th>
+                                    <th>Latitude</th>
+                                    <th>Longitude</th>
+                                    <th>Neighbourhood</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model.drugCrimes.Count() > 0)
+                                {
+                                    @foreach (var drug in Model.drugCrimes)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @drug.AddressX
+                                            </td>
+                                            <td>
+                                                @drug.LatitudeX
+                                            </td>
+                                            <td>
+                                                @drug.LongitudeX
+                                            </td>
+                                            <td>
+                                                @drug.CommunityCouncilNeighborhood
+                                            </td>
+                                        </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr class="danger">
+                                                <td colspan="5" class="text-center">
+                                                    No results found for term "@Model.Search"
+                                                </td>
+                                            </tr>
+                                        }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+@*<div class="text-center">
     <h1 class="display-4">Police Crime Report</h1>
     <hr />
     <table border="1" width="90%">
@@ -86,4 +220,4 @@
         }
 
     </table>
-</div>
+</div>*@
