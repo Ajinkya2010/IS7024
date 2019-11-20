@@ -17,14 +17,18 @@ namespace Drugs
 
     public partial class DrugCrime
     {
+        private string addressX;
+        private string latitudeX;
+        private string longitudeX;
+
         [JsonProperty("address_x")]
-        public string AddressX { get; set; }
+        public string AddressX { get => addressX; set => addressX = value; }
 
         [JsonProperty("latitude_x")]
-        public string LatitudeX { get; set; }
+        public string LatitudeX { get => latitudeX; set => latitudeX = value; }
 
         [JsonProperty("longitude_x")]
-        public string LongitudeX { get; set; }
+        public string LongitudeX { get => longitudeX; set => longitudeX = value; }
 
         [JsonProperty("agency")]
         public Agency Agency { get; set; }
