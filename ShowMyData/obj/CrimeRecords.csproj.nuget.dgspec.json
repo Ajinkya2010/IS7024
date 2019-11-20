@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj": {}
+    "C:\\Users\\sijia\\source\\repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj": {
+    "C:\\Users\\sijia\\source\\repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj",
+        "projectUniqueName": "C:\\Users\\sijia\\source\\repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj",
         "projectName": "CrimeRecords",
-        "projectPath": "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj",
+        "projectPath": "C:\\Users\\sijia\\source\\repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj",
         "packagesPath": "C:\\Users\\sijia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\obj\\",
+        "outputPath": "C:\\Users\\sijia\\source\\repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
