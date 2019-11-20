@@ -6,7 +6,10 @@
     var drug_Crimes = (Drugs.DrugCrime[])ViewData["drugCrimes"];
 }
 
-<h1>Search Neighbourhood</h1>
+<h2>Drug related Crimes</h2>
+<hr />
+<p> This page lists down data for drug related crimes along with relevant poilce records. A search can be accomplished by putting in keywords for neighbourhood name which returns drug related crime data for that particular area in the City of Cincinnati.</p>
+<h3>Search Neighbourhood</h3>
 
 <form action="" method="POST">
     <div class="form-group">
@@ -19,7 +22,7 @@
 </form>
 
 
-@if (Model.SearchCompleted)
+@if (Model.searchCompleted)
 {
     <div class="container">
         <div class="row">
@@ -76,16 +79,16 @@
                                                 @police.LatitudeX
                                             </td>
                                         </tr>
-                                            }
-                                        }
-                                        else
-                                        {
-                                            <tr class="danger">
-                                                <td colspan="5" class="text-center">
-                                                    No results found for term "@Model.Search"
-                                                </td>
-                                            </tr>
-                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    <tr class="danger">
+                                        <td colspan="5" class="text-center">
+                                            No results found for term "@Model.search"
+                                        </td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>
@@ -118,16 +121,16 @@
                                                 @drug.CommunityCouncilNeighborhood
                                             </td>
                                         </tr>
-                                            }
-                                        }
-                                        else
-                                        {
-                                            <tr class="danger">
-                                                <td colspan="5" class="text-center">
-                                                    No results found for term "@Model.Search"
-                                                </td>
-                                            </tr>
-                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    <tr class="danger">
+                                        <td colspan="5" class="text-center">
+                                            No results found for term "@Model.search"
+                                        </td>
+                                    </tr>
+                                }
                             </tbody>
                         </table>
                     </div>
@@ -141,83 +144,83 @@
 
 
 @*<div class="text-center">
-    <h1 class="display-4">Police Crime Report</h1>
-    <hr />
-    <table border="1" width="90%">
-        <tr>
-            <th>Incident Number</th>
-            <th>Date Reported</th>
-            <th>Date of Clearence</th>
-            <th>Address of Incident</th>
-            <th>Location</th>
-            <th>Neighbourhood</th>
-            <th>Longitude</th>
-            <th>Latitude</th>
-        </tr>
-        @{
-            foreach (Crime.PoliceCrime welcome in police_Crimes)
-            {
-                <tr>
-                    <td>
-                        @welcome.IncidentNo
-                    </td>
-                    <td>
-                        @welcome.DateReported
-                    </td>
-                    <td>
-                        @welcome.DateOfClearance
-                    </td>
-                    <td>
-                        @welcome.AddressX
-                    </td>
-                    <td>
-                        @welcome.Location
-                    </td>
-                    <td>
-                        @welcome.Neighborhood
-                    </td>
-                    <td>
-                        @welcome.LongitudeX
-                    </td>
-                    <td>
-                        @welcome.LatitudeX
-                    </td>
-                </tr>
+        <h1 class="display-4">Police Crime Report</h1>
+        <hr />
+        <table border="1" width="90%">
+            <tr>
+                <th>Incident Number</th>
+                <th>Date Reported</th>
+                <th>Date of Clearence</th>
+                <th>Address of Incident</th>
+                <th>Location</th>
+                <th>Neighbourhood</th>
+                <th>Longitude</th>
+                <th>Latitude</th>
+            </tr>
+            @{
+                foreach (Crime.PoliceCrime welcome in police_Crimes)
+                {
+                    <tr>
+                        <td>
+                            @welcome.IncidentNo
+                        </td>
+                        <td>
+                            @welcome.DateReported
+                        </td>
+                        <td>
+                            @welcome.DateOfClearance
+                        </td>
+                        <td>
+                            @welcome.AddressX
+                        </td>
+                        <td>
+                            @welcome.Location
+                        </td>
+                        <td>
+                            @welcome.Neighborhood
+                        </td>
+                        <td>
+                            @welcome.LongitudeX
+                        </td>
+                        <td>
+                            @welcome.LatitudeX
+                        </td>
+                    </tr>
+                }
             }
-        }
 
-    </table>
-</div>
+        </table>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Drug Crime Report</h1>
-    <hr />
-    <table border="1" width="90%">
-        <tr>
-            <th>Address</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-            <th>Neighbourhood</th>
-        </tr>
-        @{
-            foreach (Drugs.DrugCrime drug in Drug_Crimes)
-            {
-                <tr>
-                    <td>
-                        @drug.AddressX
-                    </td>
-                    <td>
-                        @drug.LatitudeX
-                    </td>
-                    <td>
-                        @drug.LongitudeX
-                    </td>
-                    <td>
-                        @drug.CommunityCouncilNeighborhood
-                    </td>
-                </tr>
+    <div class="text-center">
+        <h1 class="display-4">Drug Crime Report</h1>
+        <hr />
+        <table border="1" width="90%">
+            <tr>
+                <th>Address</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Neighbourhood</th>
+            </tr>
+            @{
+                foreach (Drugs.DrugCrime drug in Drug_Crimes)
+                {
+                    <tr>
+                        <td>
+                            @drug.AddressX
+                        </td>
+                        <td>
+                            @drug.LatitudeX
+                        </td>
+                        <td>
+                            @drug.LongitudeX
+                        </td>
+                        <td>
+                            @drug.CommunityCouncilNeighborhood
+                        </td>
+                    </tr>
+                }
             }
-        }
 
-    </table>
-</div>*@
+        </table>
+    </div>*@

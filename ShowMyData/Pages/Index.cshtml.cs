@@ -14,11 +14,11 @@ namespace ShowMyData.Pages
     {
         public void OnGet()
         {
-            SearchCompleted = false;
+            searchCompleted = false;
         }
         [BindProperty]
-        public string Search { get; set; }
-        public bool SearchCompleted { get; set; }
+        public string search { get; set; }
+        public bool searchCompleted { get; set; }
         public ICollection<PoliceCrime> policeCrimes { get; set; }
         public ICollection<DrugCrime> drugCrimes { get; set; }
         public void OnPost()
@@ -27,15 +27,15 @@ namespace ShowMyData.Pages
             {
                 string jsonString = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
                 policeCrimes = PoliceCrime.FromJson(jsonString);
-                policeCrimes = policeCrimes.Where(x => x.Neighborhood.ToLower().Equals(Search.ToLower())).ToArray();
+                policeCrimes = policeCrimes.Where(x => x.Neighborhood.ToLower().Equals(search.ToLower())).ToArray();
                 ViewData["PoliceCrime"] = policeCrimes;
 
                 string jsonString_1 = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
                 drugCrimes = DrugCrime.FromJson(jsonString_1);
-                drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(Search.ToLower())).ToArray();
+                drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(search.ToLower())).ToArray();
                 ViewData["DrugCrimes"] = drugCrimes;
             }
-            SearchCompleted = true;
+            searchCompleted = true;
 
         }
     }
