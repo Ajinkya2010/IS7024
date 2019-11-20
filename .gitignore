@@ -353,3 +353,4 @@ MigrationBackup/
 .ionide/
 *.vs/ShowMyData/v16/.suo
 .vs/ShowMyData/v16/.suo
+*.ide
