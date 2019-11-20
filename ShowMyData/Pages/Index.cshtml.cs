@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Net;
 using Crime;
 using Drugs;
+using Newtonsoft.Json.Schema;
+using Newtonsoft.Json.Linq;
 
 namespace ShowMyData.Pages
 {
@@ -14,28 +16,43 @@ namespace ShowMyData.Pages
     {
         public void OnGet()
         {
-            SearchCompleted = false;
+            searchCompleted = false;
         }
         [BindProperty]
-        public string Search { get; set; }
-        public bool SearchCompleted { get; set; }
+        public string search { get; set; }
+        public bool searchCompleted { get; set; }
         public ICollection<PoliceCrime> policeCrimes { get; set; }
         public ICollection<DrugCrime> drugCrimes { get; set; }
         public void OnPost()
         {
             using (var WebClient = new WebClient())
             {
-                string jsonString = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
-                policeCrimes = PoliceCrime.FromJson(jsonString);
-                policeCrimes = policeCrimes.Where(x => x.Neighborhood.ToLower().Equals(Search.ToLower())).ToArray();
+                //Reads the Police Crime data from the JSON stream
+                string policeCrime = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
+                policeCrimes = PoliceCrime.FromJson(policeCrime);
+                policeCrimes = policeCrimes.Where(x => x.Neighborhood.ToLower().Equals(search.ToLower())).ToArray();
                 ViewData["PoliceCrime"] = policeCrimes;
 
-                string jsonString_1 = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
-                drugCrimes = DrugCrime.FromJson(jsonString_1);
-                drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(Search.ToLower())).ToArray();
-                ViewData["DrugCrimes"] = drugCrimes;
+                //Reads the Drug Crime data from the JSON stream
+                string DrugCrimes = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/7mtn-nnb5.json");
+                drugCrimes = DrugCrime.FromJson(DrugCrimes);
+                JSchema schema = JSchema.Parse(System.IO.File.ReadAllText("DrugCrimeSchema.json"));
+                JArray jsonArray = JArray.Parse(DrugCrimes);
+                IList<string> validationEvents = new List<string>();
+                if (jsonArray.IsValid(schema, out validationEvents))
+                {
+                    drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(search.ToLower())).ToArray();
+                    ViewData["DrugCrimes"] = drugCrimes;
+                }
+                else
+                {//In case the JSONSchema validation fails, the results would be displayed
+                    foreach (string evt in validationEvents)
+                    {
+                        Console.WriteLine(evt);
+                    }
+                }
+                searchCompleted = true;
             }
-            SearchCompleted = true;
 
         }
     }
