@@ -1,0 +1,74 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Element"
+  },
+  "definitions": {
+    "Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "address_x": {
+          "type": "string"
+        },
+        "latitude_x": {
+          "type": "string"
+        },
+        "longitude_x": {
+          "type": "string"
+        },
+        "agency": {
+          "type": "string"
+        },
+        "create_time_incident": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "disposition_text": {
+          "type": "string"
+        },
+        "event_number": {
+          "type": "string"
+        },
+        "incident_type_id": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "string",
+          "format": "integer"
+        },
+        "closed_time_incident": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "beat": {
+          "type": "string"
+        },
+        "community_council_neighborhood": {
+          "type": "string"
+        },
+        "district": {
+          "type": "string",
+          "format": "integer"
+        }
+      },
+      "required": [
+        "address_x",
+        "agency",
+        "beat",
+        "closed_time_incident",
+        "community_council_neighborhood",
+        "create_time_incident",
+        "disposition_text",
+        "district",
+        "event_number",
+        "incident_type_id",
+        "latitude_x",
+        "longitude_x",
+        "priority"
+      ],
+      "title": "Element"
+    }
+  }
+}
