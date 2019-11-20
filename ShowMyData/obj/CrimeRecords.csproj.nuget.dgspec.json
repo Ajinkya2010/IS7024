@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj": {}
+    "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj": {
+    "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj",
+        "projectUniqueName": "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj",
         "projectName": "CrimeRecords",
-        "projectPath": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\CrimeRecords.csproj",
-        "packagesPath": "C:\\Users\\ajink\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajink\\Source\\Repos\\IS7024\\ShowMyData\\obj\\",
+        "projectPath": "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\CrimeRecords.csproj",
+        "packagesPath": "C:\\Users\\sijia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sijia\\Source\\Repos\\Wenzhu612\\CodeReview\\IS7024-Review\\ShowMyData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ajink\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sijia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
