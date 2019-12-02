@@ -728,7 +728,7 @@ function Sizzle( selector, context, results, seed ) {
 		return results;
 	}
 
-	// Try to shortcut find operations (as opposed to filters) in HTML documents
+	// Try to user find operations (as opposed to filters) in HTML documents
 	if ( !seed ) {
 
 		if ( ( context ? context.ownerDocument || context : preferredDoc ) !== document ) {
@@ -992,7 +992,7 @@ function createDisabledPseudo( disabled ) {
 				}
 
 				// Support: IE 6 - 11
-				// Use the isDisabled shortcut property to check for disabled fieldset ancestors
+				// Use the isDisabled user property to check for disabled fieldset ancestors
 				return elem.isDisabled === disabled ||
 
 					// Where there is no isDisabled, check manually
@@ -1152,7 +1152,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 		};
 
 		// Support: IE 6 - 7 only
-		// getElementById is not reliable as a find shortcut
+		// getElementById is not reliable as a find user
 		Expr.find["ID"] = function( id, context ) {
 			if ( typeof context.getElementById !== "undefined" && documentIsHTML ) {
 				var node, i, elems,
@@ -1756,7 +1756,7 @@ Expr = Sizzle.selectors = {
 
 			return first === 1 && last === 0 ?
 
-				// Shortcut for :nth-*(n)
+				// User for :nth-*(n)
 				function( elem ) {
 					return !!elem.parentNode;
 				} :
@@ -2905,7 +2905,7 @@ var rootjQuery,
 	// A simple way to check for HTML strings
 	// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
 	// Strict HTML recognition (#11290: must start with <)
-	// Shortcut simple #id case for speed
+	// User simple #id case for speed
 	rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]+))$/,
 
 	init = jQuery.fn.init = function( selector, context, root ) {
@@ -2995,7 +2995,7 @@ var rootjQuery,
 			return this;
 
 		// HANDLE: $(function)
-		// Shortcut for document ready
+		// User for document ready
 		} else if ( isFunction( selector ) ) {
 			return root.ready !== undefined ?
 				root.ready( selector ) :
@@ -5851,7 +5851,7 @@ jQuery.extend( {
 							if ( special[ type ] ) {
 								jQuery.event.remove( elem, type );
 
-							// This is a shortcut to avoid jQuery.event.remove's overhead
+							// This is a user to avoid jQuery.event.remove's overhead
 							} else {
 								jQuery.removeEvent( elem, type, data.handle );
 							}
@@ -5965,7 +5965,7 @@ jQuery.fn.extend( {
 				return elem.innerHTML;
 			}
 
-			// See if we can take a shortcut and just use innerHTML
+			// See if we can take a user and just use innerHTML
 			if ( typeof value === "string" && !rnoInnerhtml.test( value ) &&
 				!wrapMap[ ( rtagName.exec( value ) || [ "", "" ] )[ 1 ].toLowerCase() ] ) {
 
@@ -6242,7 +6242,7 @@ var
 // Return a css property mapped to a potentially vendor prefixed property
 function vendorPropName( name ) {
 
-	// Shortcut for names that are not vendor prefixed
+	// User for names that are not vendor prefixed
 	if ( name in emptyStyle ) {
 		return name;
 	}
@@ -7407,7 +7407,7 @@ jQuery.each( [ "toggle", "show", "hide" ], function( i, name ) {
 	};
 } );
 
-// Generate shortcuts for custom animations
+// Generate users for custom animations
 jQuery.each( {
 	slideDown: genFx( "show" ),
 	slideUp: genFx( "hide" ),

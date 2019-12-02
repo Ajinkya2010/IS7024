@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj": {}
+    "C:\\Users\\prash\\source\\repos\\IS7024_Project\\IS7024\\ShowMyData\\CrimeRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj": {
+    "C:\\Users\\prash\\source\\repos\\IS7024_Project\\IS7024\\ShowMyData\\CrimeRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj",
+        "projectUniqueName": "C:\\Users\\prash\\source\\repos\\IS7024_Project\\IS7024\\ShowMyData\\CrimeRecords.csproj",
         "projectName": "CrimeRecords",
-        "projectPath": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj",
-        "packagesPath": "C:\\Users\\Raynor Moras\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\obj\\",
+        "projectPath": "C:\\Users\\prash\\source\\repos\\IS7024_Project\\IS7024\\ShowMyData\\CrimeRecords.csproj",
+        "packagesPath": "C:\\Users\\prash\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\prash\\source\\repos\\IS7024_Project\\IS7024\\ShowMyData\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Raynor Moras\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\prash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -55,6 +60,10 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
@@ -70,7 +79,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
