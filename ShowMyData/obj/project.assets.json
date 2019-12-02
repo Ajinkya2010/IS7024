@@ -12944,11 +12944,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj",
+      "projectUniqueName": "C:\\Users\\Raynor Moras\\Source\\Repos\\XML\\ShowMyData\\CrimeRecords.csproj",
       "projectName": "CrimeRecords",
-      "projectPath": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj",
+      "projectPath": "C:\\Users\\Raynor Moras\\Source\\Repos\\XML\\ShowMyData\\CrimeRecords.csproj",
       "packagesPath": "C:\\Users\\Raynor Moras\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\obj\\",
+      "outputPath": "C:\\Users\\Raynor Moras\\Source\\Repos\\XML\\ShowMyData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Raynor Moras\\AppData\\Roaming\\NuGet\\NuGet.Config",
