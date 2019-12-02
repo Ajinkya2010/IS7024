@@ -1,0 +1,193 @@
+﻿#StudentProfile ul li {
+    font-family: "Trebuchet MS", "Lucida Console", "Times New Roman", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#topnav {
+    background-color: green;
+    margin-top: 0px;
+    position: fixed;
+    vertical-align: top;
+    left: 0;
+    top: 0;
+    height: 4em;
+    width: 100%;
+    z-index: 100;
+}
+
+#content {
+    position: relative;
+    margin-top: 5em;
+}
+
+ul.ui-autocomplete {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    width: 50px;
+}
+
+header {
+    background-color: #ECF3F3;
+    text-align: center;
+}
+
+li.ui-menu-item {
+    border: 1px solid black;
+}
+
+body {
+    background-color: coral;
+}
+
+#myWiki {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#myWiki td, #myWiki th {
+    border: 1px solid Highlight;
+    padding: 8px;
+}
+
+#myWiki tr:nth-child(even) {
+    background-color: white;
+    text-align: center;
+}
+
+#myWiki tr:nth-child(odd) {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#myWiki th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+#myWiki_1 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#myWiki_1 td, #myWiki_1 th {
+    border: 1px solid Highlight;
+    padding: 8px;
+}
+
+#myWiki_1 tr:nth-child(even) {
+    background-color: white;
+    text-align: center;
+}
+
+#myWiki_1 tr:nth-child(odd) {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#myWiki_1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+#myWiki_2 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#myWiki_2 td, #myWiki_2 th {
+    border: 1px solid Highlight;
+    padding: 8px;
+}
+
+#myWiki_2 tr:nth-child(even) {
+    background-color: white;
+    text-align: center;
+}
+
+#myWiki_2 tr:nth-child(odd) {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#myWiki_2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+#myWiki_3 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#myWiki_3 td, #myWiki_3 th {
+    border: 1px solid Highlight;
+    padding: 8px;
+}
+
+#myWiki_3 tr:nth-child(even) {
+    background-color: white;
+    text-align: center;
+}
+
+#myWiki_3 tr:nth-child(odd) {
+    background-color: lightblue;
+    text-align: center;
+}
+
+#myWiki_3 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+#topnav {
+    background-color: green;
+    margin-top: 0px;
+    position: fixed;
+    vertical-align: top;
+    left: 0;
+    top: 0;
+    height: 4em;
+    width: 100%;
+    z-index: 100;
+}
+
+#alternate-color tr:nth-child(even) {
+    background-color: #473C3C;
+    color: white;
+}
+
+#alternate-color tr:nth-child(odd) {
+    background-color: #0B0101;
+    color: white;
+    height: 100%;
+}
+
+body {
+    background-image: url("https://making-the-web.com/sites/default/files/clipart/151392/crime-scene-tape-151392-5275278.jpg");
+    background-color: #cccccc;
+}
+
+h1 {
+    color: white;
+}
+
+#nav-item nav-link active {
+    color: white;
+}
