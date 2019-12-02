@@ -4,6 +4,7 @@
     ViewData["Title"] = "Tabular Data For Police and Drug Crimes";
     var police_Crimes = (Crime.PoliceCrime[])ViewData["policecrimes"];
     var drug_Crimes = (Drugs.DrugCrime[])ViewData["drugCrimes"];
+    var neighborhoods = ViewData["Neighborhoods"];
 }
 <head>
     <link rel="stylesheet" href="css/Styles.css" type="text/css" />
@@ -19,11 +20,19 @@
 <form action="" method="POST">
     <div class="form-group">
         <label class="control-label" for="search"><strong></strong></label>
-        <input type="text" class="form-control" name="search" id="search" value="MILLVALE"/>
+        <input list="neighborhoods" type="text" class="form-control" name="search" id="search" value="MILLVALE" />
     </div>
     <div class="form-group">
         <input type="submit" value="Search Record" class="btn btn-danger" />
     </div>
+    <datalist id="neighborhoods">
+        @foreach (var neighborhood in ViewBag.neighborhoods)
+
+        {
+            <option> @neighborhood </option>
+        }
+
+    </datalist>
 </form>
 
 <body>
@@ -90,7 +99,7 @@
                                     else
                                     {
                                         <tr class="danger">
-                                            <td colspan="5" class="text-center">
+                                            <td colspan="8" class="text-center">
                                                 No results found for term "@Model.Search"
                                             </td>
                                         </tr>
@@ -132,7 +141,7 @@
                                     else
                                     {
                                         <tr class="danger">
-                                            <td colspan="5" class="text-center">
+                                            <td colspan="4" class="text-center">
                                                 No results found for term "@Model.Search"
                                             </td>
                                         </tr>

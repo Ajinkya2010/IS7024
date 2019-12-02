@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajink\\source\\repos\\IS7024\\ShowMyData\\CrimeRecords.csproj": {}
+    "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajink\\source\\repos\\IS7024\\ShowMyData\\CrimeRecords.csproj": {
+    "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajink\\source\\repos\\IS7024\\ShowMyData\\CrimeRecords.csproj",
+        "projectUniqueName": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj",
         "projectName": "CrimeRecords",
-        "projectPath": "C:\\Users\\ajink\\source\\repos\\IS7024\\ShowMyData\\CrimeRecords.csproj",
-        "packagesPath": "C:\\Users\\ajink\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajink\\source\\repos\\IS7024\\ShowMyData\\obj\\",
+        "projectPath": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\CrimeRecords.csproj",
+        "packagesPath": "C:\\Users\\Raynor Moras\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Raynor Moras\\Documents\\GitHub\\IS7024\\ShowMyData\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ajink\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Raynor Moras\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,10 +65,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
