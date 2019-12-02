@@ -12,15 +12,47 @@ namespace ShowMyData.Pages
 {
     public class IndexModel : PageModel
     {
-        public void OnGet()
-        {
-            SearchCompleted = false;
-        }
+
         [BindProperty]
         public string Search { get; set; }
         public bool SearchCompleted { get; set; }
         public ICollection<PoliceCrime> policeCrimes { get; set; }
         public ICollection<DrugCrime> drugCrimes { get; set; }
+        public PoliceCrime[] policeCrimeAuto;
+        public DrugCrime[] drugCrimeAuto;
+
+        public IndexModel()
+        {
+            using (var webClient = new WebClient())
+            {
+
+
+                String policeCrimeJsonString = GetJsonData("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
+                policeCrimeAuto = PoliceCrime.FromJson(policeCrimeJsonString);
+                String drugCrimeJsonString = GetJsonData("https://data.cincinnati-oh.gov/resource/7mtn-nnb5.json");
+                drugCrimeAuto = DrugCrime.FromJson(drugCrimeJsonString);
+
+
+
+
+
+            }
+        }
+        public void OnGet()
+        {
+            HashSet<string> neighborhoods = new HashSet<string>();
+
+            SearchCompleted = false;
+            foreach (PoliceCrime permit in policeCrimeAuto)
+            {
+                neighborhoods.Add(permit.Neighborhood);
+            }
+            foreach (DrugCrime permit in drugCrimeAuto)
+            {
+                neighborhoods.Add(permit.CommunityCouncilNeighborhood);
+            }
+            ViewData["Neighborhoods"] = neighborhoods;
+        }
         public void OnPost()
         {
             using (var WebClient = new WebClient())
@@ -35,6 +67,16 @@ namespace ShowMyData.Pages
                 drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(Search.ToLower())).ToArray();
                 ViewData["DrugCrimes"] = drugCrimes;
             }
+            HashSet<string> neighborhoods = new HashSet<string>();
+            foreach (PoliceCrime permit in policeCrimeAuto)
+            {
+                neighborhoods.Add(permit.Neighborhood);
+            }
+            foreach (DrugCrime permit in drugCrimeAuto)
+            {
+                neighborhoods.Add(permit.CommunityCouncilNeighborhood);
+            }
+            ViewData["Neighborhoods"] = neighborhoods;
             SearchCompleted = true;
 
         }
@@ -48,3 +90,4 @@ namespace ShowMyData.Pages
         }
     }
 }
+
