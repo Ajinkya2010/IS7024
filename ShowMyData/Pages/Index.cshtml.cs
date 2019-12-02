@@ -25,18 +25,26 @@ namespace ShowMyData.Pages
         {
             using (var WebClient = new WebClient())
             {
-                string jsonString = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
-                policeCrimes = PoliceCrime.FromJson(jsonString);
+                string jsonString_police = GetJsonData("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
+                policeCrimes = PoliceCrime.FromJson(jsonString_police);
                 policeCrimes = policeCrimes.Where(x => x.Neighborhood.ToLower().Equals(Search.ToLower())).ToArray();
                 ViewData["PoliceCrime"] = policeCrimes;
 
-                string jsonString_1 = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/7mtn-nnb5.json");
-                drugCrimes = DrugCrime.FromJson(jsonString_1);
+                string jsonString_drug = GetJsonData("https://data.cincinnati-oh.gov/resource/7mtn-nnb5.json");
+                drugCrimes = DrugCrime.FromJson(jsonString_drug);
                 drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(Search.ToLower())).ToArray();
                 ViewData["DrugCrimes"] = drugCrimes;
             }
             SearchCompleted = true;
 
+        }
+        public string GetJsonData(string JsonUrl)
+        {
+            using (WebClient webClient = new WebClient())
+            {
+                string jsonString = webClient.DownloadString(JsonUrl);
+                return jsonString;
+            }
         }
     }
 }
