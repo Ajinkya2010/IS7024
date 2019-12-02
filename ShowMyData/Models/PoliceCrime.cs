@@ -69,7 +69,7 @@ namespace Crime
         public string Neighborhood { get; set; }
 
         [JsonProperty("weapons", NullValueHandling = NullValueHandling.Ignore)]
-        public Weapons? Weapons { get; set; }
+        public string Weapons { get; set; }
 
         [JsonProperty("date_of_clearance", NullValueHandling = NullValueHandling.Ignore)]
         public DateTimeOffset? DateOfClearance { get; set; }
