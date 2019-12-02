@@ -24,7 +24,7 @@ namespace CrimeRecords.Pages
         public void OnPost()
         {
             // update the local map.
-            string UserData = user.FirstName + user.LastName + user.EmailID + user.PhoneNo;
+            string UserData = user.FirstName + user.LastName + user.EmailID + user.PhoneNo + user.Neighbourhood + user.Crime + user.Location;
             UserRoster.allUsers.Add(user);
             Console.WriteLine(UserData);
         }

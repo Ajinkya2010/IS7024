@@ -11,5 +11,10 @@ namespace CrimeRecords
         public string LastName { get; set; }
         public string EmailID { get; set; }
         public string PhoneNo { get; set; }
+
+        public string Neighbourhood { get; set; }
+
+        public string Crime { get; set; }
+        public string Location { get; set; }
     }
 }
