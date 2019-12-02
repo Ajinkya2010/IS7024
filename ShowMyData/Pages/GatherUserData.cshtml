@@ -1,0 +1,17 @@
+﻿@page
+@model CrimeRecords.Pages.GatherUserDataModel
+@{
+    ViewData["Title"] = "GatherUserData";
+}
+
+<h1>Subscription Form</h1>
+<p>Submit your details and our executive will get in touch with you</p>
+<div class="text-md-left">
+    <form method="post">
+        <input type="text" name="FirstName" placeholder="First Name" size="40" /><br /><br />
+        <input type="text" name="LastName" placeholder="Last Name" size="40" /><br /><br />
+        <input type="text" name="EmailID" placeholder="Email ID" size="40" /><br /><br />
+        <input type="text" name="PhoneNo" placeholder="Mobile Number without special characters" size="40" /><br /><br />
+        <input id="Button1" type="submit" value="Submit" />
+    </form>
+</div>

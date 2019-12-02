@@ -1,0 +1,23 @@
+﻿@page
+@model CrimeRecords.Pages.UserDataDashboardModel
+@{
+    ViewData["Title"] = "UserDataDashboard";
+    var Users = (IList<CrimeRecords.User>)ViewData["UserList"];
+}
+
+<div>
+    <table border="1">
+        <tr><th>First Name</th><th>Last Name</th><th>Email ID</th><th>Phone Number</th></tr>
+        @{
+            foreach (CrimeRecords.User user in Users)
+            {
+                <tr>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.EmailID</td>
+                    <td>@user.PhoneNo</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
