@@ -124,3 +124,5 @@ C:\Users\prash\source\repos\IS7024_Project\IS7024\ShowMyData\obj\Release\netcore
 C:\Users\prash\source\repos\IS7024_Project\IS7024\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.csproj.CopyComplete
 C:\Users\prash\source\repos\IS7024_Project\IS7024\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\GatherUserData.cshtml.g.cs
 C:\Users\prash\source\repos\IS7024_Project\IS7024\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\UserDataDashboard.cshtml.g.cs
+C:\Users\ajink\source\repos\IS7024\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\GatherUserData.g.cshtml.cs
+C:\Users\ajink\source\repos\IS7024\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\UserDataDashboard.g.cshtml.cs
