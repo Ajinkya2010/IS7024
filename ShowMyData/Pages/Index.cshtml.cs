@@ -30,7 +30,7 @@ namespace ShowMyData.Pages
                 policeCrimes = policeCrimes.Where(x => x.Neighborhood.ToLower().Equals(Search.ToLower())).ToArray();
                 ViewData["PoliceCrime"] = policeCrimes;
 
-                string jsonString_1 = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/ksej-uzjq.json");
+                string jsonString_1 = WebClient.DownloadString("https://data.cincinnati-oh.gov/resource/7mtn-nnb5.json");
                 drugCrimes = DrugCrime.FromJson(jsonString_1);
                 drugCrimes = drugCrimes.Where(x => x.CommunityCouncilNeighborhood.ToLower().Equals(Search.ToLower())).ToArray();
                 ViewData["DrugCrimes"] = drugCrimes;
