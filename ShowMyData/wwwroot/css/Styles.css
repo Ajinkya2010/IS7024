@@ -1,0 +1,22 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/86/a4/88/86a488a90290e0e980d22829faf75649.jpg")
+}
+
+h1, h3 {
+    color: white;
+}
+
+#bg tr:nth-child(even) {
+    background-color: #3C3636;
+    color: white;
+}
+
+#bg tr:nth-child(odd) {
+    background-color: #0E0303;
+    color: white;
+}
+
+#bg tr:hover {
+    background-color: #ddd;
+    color: black;
+}
