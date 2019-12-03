@@ -13,7 +13,7 @@ using System.Net;
 
 namespace CrimeRecords.Controller
 {
-    [Route("api/[controller]")]
+    [Route("Crime")]
     [ApiController]
     public class NeighbourhoodsController : ControllerBase
     {

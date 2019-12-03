@@ -17,7 +17,7 @@ namespace CrimeRecords.Pages
         {
             using (var webClient = new WebClient())
             {
-                String AccidentJson_Data = webClient.DownloadString("https://cincinnatiaccidents.azurewebsites.net/api/neighbourhoods/downtown");
+                String AccidentJson_Data = webClient.DownloadString("https://cincinnatiaccidents.azurewebsites.net/api/accidents/downtown");
                 AccidentData = Accident.FromJson(AccidentJson_Data);
             }
         }

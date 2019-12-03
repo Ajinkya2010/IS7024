@@ -198,3 +198,4 @@ C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeR
 C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.dll
 C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.pdb
 C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.csproj.CopyComplete
+C:\Users\ajink\Source\Repos\IS7024\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Accident.g.cshtml.cs
