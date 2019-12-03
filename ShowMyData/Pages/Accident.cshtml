@@ -5,26 +5,33 @@
     var accident_data = (Accident_Type.Accident[])ViewData["AccidentData"];
 }
 
-<h1>Accident Data From Praneeth's Team</h1>
+<html>
+<head>
+    <link rel="stylesheet" href="css/Styles.css" type="text/css" />
+</head>
+<body>
+    <h1>Accident Data From Praneeth's Team</h1>
 
-<table class="table table-bordered table-striped table-hover">
-    <thead>
-        <tr>
-            <th>AccidentType</th>
-            <th>Accident Date</th>
-            <th>Address</th>
-            <th>Neighbourhood</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (Accident_Type.Accident accidents in accident_data)
-        {
+    <table class="table table-bordered table-striped table-hover" id="bg">
+        <thead>
             <tr>
-                <td>@accidents.AccidentType</td>
-                <td>@accidents.AccidentDate</td>
-                <td>@accidents.Address</td>
-                <td>@accidents.Neighborhood</td>
+                <th>AccidentType</th>
+                <th>Accident Date</th>
+                <th>Address</th>
+                <th>Neighbourhood</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (Accident_Type.Accident accidents in accident_data)
+            {
+                <tr>
+                    <td>@accidents.AccidentType</td>
+                    <td>@accidents.AccidentDate</td>
+                    <td>@accidents.Address</td>
+                    <td>@accidents.Neighborhood</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

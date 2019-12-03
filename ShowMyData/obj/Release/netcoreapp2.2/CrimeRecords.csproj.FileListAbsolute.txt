@@ -163,3 +163,38 @@ C:\Users\Raynor Moras\Source\Repos\XML\ShowMyData\obj\Release\netcoreapp2.2\Crim
 C:\Users\Raynor Moras\Source\Repos\XML\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.pdb
 C:\Users\Raynor Moras\Source\Repos\XML\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.csproj.CopyComplete
 C:\Users\Raynor Moras\Source\Repos\XML\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Accident.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\appsettings.Development.json
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\appsettings.json
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\CrimeRecords.deps.json
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\CrimeRecords.runtimeconfig.json
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\CrimeRecords.runtimeconfig.dev.json
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\CrimeRecords.dll
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\CrimeRecords.pdb
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\CrimeRecords.Views.dll
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\bin\Release\netcoreapp2.2\CrimeRecords.Views.pdb
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.csprojAssemblyReference.cache
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.RazorAssemblyInfo.cache
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.RazorAssemblyInfo.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.AssemblyInfoInputs.cache
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.AssemblyInfo.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.TagHelpers.input.cache
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.TagHelpers.output.cache
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.RazorCoreGenerate.cache
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Accident.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\GatherUserData.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Index.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\UserDataDashboard.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.RazorTargetAssemblyInfo.cache
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.RazorTargetAssemblyInfo.cs
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.Views.pdb
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.dll
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.pdb
+C:\Users\prash\Source\Repos\IS7024_2\ShowMyData\obj\Release\netcoreapp2.2\CrimeRecords.csproj.CopyComplete
