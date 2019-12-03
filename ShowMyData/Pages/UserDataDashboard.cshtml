@@ -5,24 +5,37 @@
     var Users = (IList<CrimeRecords.User>)ViewData["UserList"];
 }
 
-<div>
-    <table border="1">
-        <tr><th>First Name</th><th>Last Name</th><th>Email ID</th><th>Phone Number</th>
-        <th>Neighbourhood</th><th>Type of Crime</th><th>Crime Location</th>
-        </tr>
-        @{
-            foreach (CrimeRecords.User user in Users)
-            {
-                <tr>
-                    <td>@user.FirstName</td>
-                    <td>@user.LastName</td>
-                    <td>@user.EmailID</td>
-                    <td>@user.PhoneNo</td>
-                    <td>@user.Neighbourhood</td>
-                    <td>@user.Crime</td>
-                    <td>@user.Location</td>
-                </tr>
+<html>
+<head>
+    <link rel="stylesheet" href="css/Styles.css" type="text/css" />
+</head>
+<body>
+    <div>
+        <table border="1" id="bgcolor">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email ID</th>
+                <th>Phone Number</th>
+                <th>Neighbourhood</th>
+                <th>Type of Crime</th>
+                <th>Crime Location</th>
+            </tr>
+            @{
+                foreach (CrimeRecords.User user in Users)
+                {
+                    <tr>
+                        <td>@user.FirstName</td>
+                        <td>@user.LastName</td>
+                        <td>@user.EmailID</td>
+                        <td>@user.PhoneNo</td>
+                        <td>@user.Neighbourhood</td>
+                        <td>@user.Crime</td>
+                        <td>@user.Location</td>
+                    </tr>
+                }
             }
-        }
-    </table>
-</div>
+        </table>
+    </div>
+</body>
+</html>
